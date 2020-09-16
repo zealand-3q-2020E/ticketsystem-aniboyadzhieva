@@ -4,11 +4,8 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    public class MC
+    public class MC : Vehicle
     {
-        private static double _price;
-        private static string _vehicle;
-
         /// <summary>
         /// property LicensePlate
         /// </summary>
@@ -22,20 +19,18 @@ namespace ClassLibrary
         /// method Price
         /// </summary>
         /// <returns>fixed double price 125</returns>
-        public static double Price()
+        public override double Price()
         {
-            _price = 125;
-            return _price;
+            return 125;
         }
 
         /// <summary>
         /// method VehicleType
         /// </summary>
         /// <returns>string "MC"</returns>
-        public static string VehicleType()
+        public override string VehicleType()
         {
-            _vehicle = "MC";
-            return _vehicle;
+            return "MC";
         }
     }
 }

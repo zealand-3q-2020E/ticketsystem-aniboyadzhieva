@@ -11,9 +11,9 @@ namespace UnitTestProject1
         public void TestCarPriceMethod()
         {
             //Arrange
-            Car.Price();
+            Car car1 = new Car();
             //Act
-            double actualResult = Car.Price();
+            double actualResult = car1.Price();
             //Assert
             Assert.AreEqual(240, actualResult);
         }
@@ -23,9 +23,9 @@ namespace UnitTestProject1
         public void TestCarVehicleTypeMethod()
         {
             //Arrange
-            Car.VehicleType();
+            Car car2 = new Car();
             //Act
-            string actualResult = Car.VehicleType();
+            string actualResult = car2.VehicleType();
             //Assert
             Assert.AreEqual("Car", actualResult);
         }
@@ -34,9 +34,9 @@ namespace UnitTestProject1
         public void TestMCPriceMethod()
         {
             //Arrange
-            MC.Price();
+            MC mc1 = new MC();
             //Act
-            double actualResult = MC.Price();
+            double actualResult = mc1.Price();
             //Assert
             Assert.AreEqual(125, actualResult);
         }
@@ -45,9 +45,9 @@ namespace UnitTestProject1
         public void TestMCVehicleTypeMethod()
         {
             //Arrange
-            MC.VehicleType();
+            MC mc2 = new MC();
             //Act
-            string actualResult = MC.VehicleType();
+            string actualResult = mc2.VehicleType();
             //Assert
             Assert.AreEqual("MC", actualResult);
         }
