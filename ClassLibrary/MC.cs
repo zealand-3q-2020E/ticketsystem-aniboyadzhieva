@@ -4,39 +4,38 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    public class Car
+    public class MC
     {
         private static double _price;
-        private static string _type;
+        private static string _vehicle;
 
         /// <summary>
-        /// property for License Plate
+        /// property LicensePlate
         /// </summary>
         public string LicensePlate { get; set; }
         /// <summary>
-        /// property for Date
+        /// property Date
         /// </summary>
         public DateTime Date { get; set; }
-
 
         /// <summary>
         /// method Price
         /// </summary>
-        /// <returns>fixed price 240 as double</returns>
+        /// <returns>fixed double price 125</returns>
         public static double Price()
         {
-            _price = 240;
+            _price = 125;
             return _price;
         }
 
         /// <summary>
         /// method VehicleType
         /// </summary>
-        /// <returns>string "Car"</returns>
+        /// <returns>string "MC"</returns>
         public static string VehicleType()
         {
-            _type = "Car";
-            return _type;
+            _vehicle = "MC";
+            return _vehicle;
         }
     }
 }

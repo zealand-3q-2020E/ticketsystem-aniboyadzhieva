@@ -8,7 +8,7 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestPriceMethod()
+        public void TestCarPriceMethod()
         {
             //Arrange
             Car.Price();
@@ -20,7 +20,7 @@ namespace UnitTestProject1
 
 
         [TestMethod]
-        public void TestVehicleTypeMethod()
+        public void TestCarVehicleTypeMethod()
         {
             //Arrange
             Car.VehicleType();
@@ -28,6 +28,28 @@ namespace UnitTestProject1
             string actualResult = Car.VehicleType();
             //Assert
             Assert.AreEqual("Car", actualResult);
+        }
+
+        [TestMethod]
+        public void TestMCPriceMethod()
+        {
+            //Arrange
+            MC.Price();
+            //Act
+            double actualResult = MC.Price();
+            //Assert
+            Assert.AreEqual(125, actualResult);
+        }
+
+        [TestMethod]
+        public void TestMCVehicleTypeMethod()
+        {
+            //Arrange
+            MC.VehicleType();
+            //Act
+            string actualResult = MC.VehicleType();
+            //Assert
+            Assert.AreEqual("MC", actualResult);
         }
 
     }
