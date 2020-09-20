@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ClassLibrary;
@@ -48,6 +49,18 @@ namespace UnitTestProject1
             MC mc2 = new MC();
             //Act
             string actualResult = mc2.VehicleType();
+            //Assert
+            Assert.AreEqual("MC", actualResult);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void TestLicensePlateLenght()
+        {
+            //Arrange
+            MC mc3 = new MC("CA28035RF");
+            //Act
+            string actualResult = mc3.VehicleType();
             //Assert
             Assert.AreEqual("MC", actualResult);
         }

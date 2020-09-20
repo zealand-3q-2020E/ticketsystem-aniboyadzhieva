@@ -8,17 +8,6 @@ namespace ClassLibrary
 
     {
         /// <summary>
-        /// property for License Plate
-        /// </summary>
-        public string LicensePlate { get; set; }
-
-        /// <summary>
-        /// property for Date
-        /// </summary>
-        public DateTime Date { get; set; }
-
-
-        /// <summary>
         /// method Price
         /// </summary>
         /// <returns>fixed price 240 as double</returns>
@@ -34,6 +23,14 @@ namespace ClassLibrary
         public override string VehicleType()
         {
             return "Car";
+        }
+
+        public Car(string licensePlate) : base(licensePlate)
+        {
+        }
+
+        public Car()
+        {
         }
     }
 }

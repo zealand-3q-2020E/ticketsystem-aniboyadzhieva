@@ -6,14 +6,14 @@ namespace ClassLibrary
 {
     public class MC : Vehicle
     {
-        /// <summary>
-        /// property LicensePlate
-        /// </summary>
-        public string LicensePlate { get; set; }
-        /// <summary>
-        /// property Date
-        /// </summary>
-        public DateTime Date { get; set; }
+        public MC(string licensePlate) : base(licensePlate)
+        {
+        }
+
+        public MC()
+        {
+
+        }
 
         /// <summary>
         /// method Price
