@@ -58,11 +58,22 @@ namespace UnitTestProject1
         public void TestLicensePlateLenght()
         {
             //Arrange
-            MC mc3 = new MC("CA28035RF");
+            MC mc3 = new MC("CA28035RF", true);
             //Act
             string actualResult = mc3.VehicleType();
             //Assert
             Assert.AreEqual("MC", actualResult);
+        }
+
+        [TestMethod]
+        public void TestCarBrobizzDiscount()
+        {
+            //Arrange
+            Car car3 = new Car("BG2356K", true);
+            //Act
+            double actualResult = car3.BrobizzDiscountMethod();
+            //Assert
+            Assert.AreEqual(228, actualResult);
         }
 
     }

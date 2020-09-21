@@ -6,31 +6,39 @@ namespace ClassLibrary
 {
     public class MC : Vehicle
     {
-        public MC(string licensePlate) : base(licensePlate)
+        /// <summary>
+        /// override method VehicleType
+        /// </summary>
+        /// <returns>string "MC"</returns>
+        public override string VehicleType()
         {
-        }
-
-        public MC()
-        {
-
+            return "MC";
         }
 
         /// <summary>
-        /// method Price
+        /// override Price method
         /// </summary>
-        /// <returns>fixed double price 125</returns>
+        /// <returns>double 125</returns>
         public override double Price()
         {
             return 125;
         }
 
         /// <summary>
-        /// method VehicleType
+        /// MC constructor that inherits from the base class constructor
         /// </summary>
-        /// <returns>string "MC"</returns>
-        public override string VehicleType()
+        /// <param name="licensePlate"></param>
+        /// <param name="brobizzDiscount"></param>
+        public MC(string licensePlate, bool brobizzDiscount) : base(licensePlate, brobizzDiscount)
         {
-            return "MC";
+        }
+
+        /// <summary>
+        /// default MC constructor
+        /// </summary>
+        public MC() : base()
+        {
+
         }
     }
 }

@@ -8,28 +8,27 @@ namespace ClassLibrary
 
     {
         /// <summary>
-        /// method Price
-        /// </summary>
-        /// <returns>fixed price 240 as double</returns>
-        public override double Price()
-        {
-            return 240;
-        }
-
-        /// <summary>
-        /// method VehicleType
+        /// override method VehicleType
         /// </summary>
         /// <returns>string "Car"</returns>
         public override string VehicleType()
         {
             return "Car";
         }
-
-        public Car(string licensePlate) : base(licensePlate)
+        
+        /// <summary>
+        /// Car constructor that inherits from the base class constructor
+        /// </summary>
+        /// <param name="licensePlate"></param>
+        /// <param name="brobizzDiscount"></param>
+        public Car(string licensePlate, bool brobizzDiscount) : base(licensePlate, brobizzDiscount)
         {
         }
 
-        public Car()
+        /// <summary>
+        /// default Car constructor
+        /// </summary>
+        public Car() : base()
         {
         }
     }
