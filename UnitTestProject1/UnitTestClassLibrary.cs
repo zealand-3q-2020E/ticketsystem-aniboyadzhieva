@@ -6,7 +6,7 @@ using ClassLibrary;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestClassLibrary
     {
         [TestMethod]
         public void TestCarPriceMethod()
@@ -58,7 +58,7 @@ namespace UnitTestProject1
         public void TestLicensePlateLenght()
         {
             //Arrange
-            MC mc3 = new MC("CA28035RF", true);
+            MC mc3 = new MC("CA28035RF", true, DateTime.Today);
             //Act
             string actualResult = mc3.VehicleType();
             //Assert
@@ -69,12 +69,13 @@ namespace UnitTestProject1
         public void TestCarBrobizzDiscount()
         {
             //Arrange
-            Car car3 = new Car("BG2356K", true);
+            Car car3 = new Car("BG2356K", true, DateTime.Today);
             //Act
             double actualResult = car3.BrobizzDiscountMethod();
             //Assert
             Assert.AreEqual(228, actualResult);
         }
 
+        
     }
 }

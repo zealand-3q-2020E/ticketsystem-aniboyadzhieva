@@ -29,7 +29,7 @@ namespace ClassLibrary
         /// </summary>
         /// <param name="licensePlate"></param>
         /// <param name="brobizzDiscount"></param>
-        public MC(string licensePlate, bool brobizzDiscount) : base(licensePlate, brobizzDiscount)
+        public MC(string licensePlate, bool brobizzDiscount, DateTime date) : base(licensePlate, brobizzDiscount, date)
         {
         }
 

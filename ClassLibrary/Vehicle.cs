@@ -6,6 +6,7 @@ namespace ClassLibrary
     {
         private string licensePlate;
         private string brobizzDiscount;
+        private DateTime date;
 
         /// <summary>
         /// default Vehicle constructor
@@ -20,10 +21,11 @@ namespace ClassLibrary
         /// </summary>
         /// <param name="licensePlate"></param>
         /// <param name="brobizzDiscount"></param>
-        public Vehicle(string licensePlate, bool brobizzDiscount)
+        public Vehicle(string licensePlate, bool brobizzDiscount, DateTime date)
         {
             LicensePlate = licensePlate;
             BrobizzDiscount = brobizzDiscount;
+            Date = date;
 
             if (licensePlate.Length > 8)
                 throw new Exception("License plate must not contain more than 8 characters");

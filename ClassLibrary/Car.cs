@@ -15,13 +15,14 @@ namespace ClassLibrary
         {
             return "Car";
         }
-        
+
+
         /// <summary>
         /// Car constructor that inherits from the base class constructor
         /// </summary>
         /// <param name="licensePlate"></param>
         /// <param name="brobizzDiscount"></param>
-        public Car(string licensePlate, bool brobizzDiscount) : base(licensePlate, brobizzDiscount)
+        public Car(string licensePlate, bool brobizzDiscount, DateTime date) : base(licensePlate, brobizzDiscount, date)
         {
         }
 

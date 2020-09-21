@@ -10,7 +10,7 @@
             </summary>
             <returns>string "Car"</returns>
         </member>
-        <member name="M:ClassLibrary.Car.#ctor(System.String,System.Boolean)">
+        <member name="M:ClassLibrary.Car.#ctor(System.String,System.Boolean,System.DateTime)">
             <summary>
             Car constructor that inherits from the base class constructor
             </summary>
@@ -34,7 +34,7 @@
             </summary>
             <returns>double 125</returns>
         </member>
-        <member name="M:ClassLibrary.MC.#ctor(System.String,System.Boolean)">
+        <member name="M:ClassLibrary.MC.#ctor(System.String,System.Boolean,System.DateTime)">
             <summary>
             MC constructor that inherits from the base class constructor
             </summary>
@@ -51,7 +51,7 @@
             default Vehicle constructor
             </summary>
         </member>
-        <member name="M:ClassLibrary.Vehicle.#ctor(System.String,System.Boolean)">
+        <member name="M:ClassLibrary.Vehicle.#ctor(System.String,System.Boolean,System.DateTime)">
             <summary>
             Vehicle constructor - includes the functionality about the length of the license plate
             </summary>
