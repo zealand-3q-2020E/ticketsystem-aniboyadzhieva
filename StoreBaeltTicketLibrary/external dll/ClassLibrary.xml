@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:ClassLibrary.Car.VehicleType">
+            <summary>
+            override method VehicleType
+            </summary>
+            <returns>string "Car"</returns>
+        </member>
+        <member name="M:ClassLibrary.Car.#ctor(System.String,System.Boolean)">
+            <summary>
+            Car constructor that inherits from the base class constructor
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="brobizzDiscount"></param>
+        </member>
+        <member name="M:ClassLibrary.Car.#ctor">
+            <summary>
+            default Car constructor
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.MC.VehicleType">
+            <summary>
+            override method VehicleType
+            </summary>
+            <returns>string "MC"</returns>
+        </member>
+        <member name="M:ClassLibrary.MC.Price">
+            <summary>
+            override Price method
+            </summary>
+            <returns>double 125</returns>
+        </member>
+        <member name="M:ClassLibrary.MC.#ctor(System.String,System.Boolean)">
+            <summary>
+            MC constructor that inherits from the base class constructor
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="brobizzDiscount"></param>
+        </member>
+        <member name="M:ClassLibrary.MC.#ctor">
+            <summary>
+            default MC constructor
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.#ctor">
+            <summary>
+            default Vehicle constructor
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.#ctor(System.String,System.Boolean)">
+            <summary>
+            Vehicle constructor - includes the functionality about the length of the license plate
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="brobizzDiscount"></param>
+        </member>
+        <member name="P:ClassLibrary.Vehicle.LicensePlate">
+            <summary>
+            LicensePlate property - string
+            </summary>
+        </member>
+        <member name="P:ClassLibrary.Vehicle.BrobizzDiscount">
+            <summary>
+            BrobizzDiscount property - bool
+            </summary>
+        </member>
+        <member name="P:ClassLibrary.Vehicle.Date">
+            <summary>
+            property for Date
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.Price">
+            <summary>
+            Price method
+            </summary>
+            <returns>double 240</returns>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.BrobizzDiscountMethod">
+            <summary>
+            BrobizzDiscountMethod method
+            </summary>
+            <returns>price with brobizz discount or the regular one</returns>
+        </member>
+        <member name="M:ClassLibrary.Vehicle.VehicleType">
+            <summary>
+            VehicleType method - only overrides are used
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
