@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ClassLibrary">
+      <HintPath>..\ClassLibrary\bin\Debug\netcoreapp2.1\ClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreBaeltTicketLibrary">
+      <HintPath>..\StoreBaeltTicketLibrary\bin\Debug\netcoreapp3.0\StoreBaeltTicketLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
